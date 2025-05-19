@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
     std::string ProgramName = (lastSlash == std::string::npos) ? fullPath : fullPath.substr(lastSlash + 1);
 
     if (argc != 4) {
-        std::cout << ProgramName << " [FileName] [Base64] [Encryption | Decryption]";
+        std::cout << ProgramName << " [FileName] [Base64] [Encryption | Decryption]" << std::endl;
         std::cout << "(Error 1)" << std::endl;
         return 1;
     }
@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
         return 0;
     }
     
-    std::cout << ProgramName << " [FileName] [Base64] [Encryption | Decryption]";
+    std::cout << ProgramName << " [FileName] [Base64] [Encryption | Decryption]" << std::endl;
     std::cout << "(Error 1)" << std::endl;
     return 1;
 }
